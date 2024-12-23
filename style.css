@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #131313;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+main div {
+    margin: 0 20px;
+    border: 1px solid gray;
+    border-bottom: 4px solid grey;
+    border-radius: 7px;
+    padding: 15px 10px;
+    background-color:  #222222;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+div button {
+    border: none;
+    font-size: 2.5rem;
+    /* border-radius: 50%; */
+    background-color: #5e5e5e;
+    color: whitesmoke;
+    cursor: pointer;
+}
+div :is(button:hover, button:focus) {
+    filter: brightness(85%);
+}
+div button:active {
+    filter: contrast(45%);
+}
+div input {
+    grid-column: 1 / 5;
+    font-size: 2.5rem;
+    background-color: #302f2f;
+    color: whitesmoke;
+    padding: 0 4px;
+    border: 1px solid gray;
+    border-bottom: 4px solid grey;
+}
+ div .clearBtn {
+    grid-column: 1 / 4;
+} 
+div button:last-child {
+    grid-column: 3 / 5;
+}

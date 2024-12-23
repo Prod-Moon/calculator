@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPHONE Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <input id="userInput" type="text" readonly> 
+            <button onclick="clearResult()" class="clearBtn" id="numberBtn">AC</button>
+            <button onclick="appendToDisplay('/')" id="numberBtn">÷</button>
+            <button onclick="appendToDisplay('7')" id="numberBtn">7</button>
+            <button onclick="appendToDisplay('8')" id="numberBtn">8</button>
+            <button onclick="appendToDisplay('9')"  id="numberBtn">9</button>
+            <button onclick="appendToDisplay('*')"  id="numberBtn">×</button>
+            <button onclick="appendToDisplay('4')"  id="numberBtn">4</button>
+            <button onclick="appendToDisplay('5')"  id="numberBtn">5</button>
+            <button onclick="appendToDisplay('6')"  id="numberBtn">6</button>
+            <button onclick="appendToDisplay('-')"  id="numberBtn">-</button>
+            <button onclick="appendToDisplay('1')"  id="numberBtn">1</button>
+            <button onclick="appendToDisplay('2')"  id="numberBtn">2</button>
+            <button onclick="appendToDisplay('3')"  id="numberBtn">3</button>
+            <button onclick="appendToDisplay('+')" class="operatorBtn" id="numberBtn">+</button>
+            <button onclick="appendToDisplay('0')"  id="numberBtn">0</button>
+            <button onclick="appendToDisplay('.')" id="numberBtn">.</button>
+            <button onclick="calculateResult()" class="equalsTo" id="numberBtn">=</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
